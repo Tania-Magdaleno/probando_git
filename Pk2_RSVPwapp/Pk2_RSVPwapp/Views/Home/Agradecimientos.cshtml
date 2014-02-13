@@ -1,0 +1,28 @@
+﻿@model Pk2_RSVPwapp.Models.GuestResponse
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Agradecimientos</title>
+</head>
+<body>
+    <div>
+        <h1>Gracias mil!!!,@Model.Name!</h1>
+        @if (Model.WillAttend == true)
+        {
+            @:Que bueno que venras , las chelas estaran bien frias en el refri!!! 
+        }
+        else
+        {
+            @:Te lo perderas lastima :(
+        }
+        
+    </div>
+</body>
+</html>
